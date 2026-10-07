@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fastapi-hello-world-frontend",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "account_id": "366267eaff9b52ad4cc51008fa452a5c",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api", "/api/*"]
+  },
+  "vars": {
+    "API_BASE_URL": "https://fastapi-hello-world-i205.onrender.com"
+  }
+}

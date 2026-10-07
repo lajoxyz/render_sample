@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "overrides": {
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "wrangler": "4.148.0"
+  }
+}
