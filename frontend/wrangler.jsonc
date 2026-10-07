@@ -5,6 +5,9 @@
   "compatibility_date": "2026-10-01",
   "account_id": "366267eaff9b52ad4cc51008fa452a5c",
   "workers_dev": true,
+  "routes": [
+    { "pattern": "hello.lajo-apps.info", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",

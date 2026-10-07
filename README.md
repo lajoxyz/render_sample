@@ -1,6 +1,7 @@
 # FastAPI + Cloudflare Hello World
 
-- Frontend: https://fastapi-hello-world-frontend.lajo-xyz-2000.workers.dev
+- Frontend: https://hello.lajo-apps.info
+- Cloudflare fallback: https://fastapi-hello-world-frontend.lajo-xyz-2000.workers.dev
 - API: https://fastapi-hello-world-i205.onrender.com
 - API docs: https://fastapi-hello-world-i205.onrender.com/docs
 
@@ -46,8 +47,9 @@ Configure these repository secrets before automated deployments can work:
 
 1. `CLOUDFLARE_API_TOKEN`: create a token at
    https://dash.cloudflare.com/profile/api-tokens using **Edit Cloudflare Workers**,
-   scoped to account `366267eaff9b52ad4cc51008fa452a5c`. This sample uses no zone
-   or custom domain. Local Wrangler OAuth login does not authenticate GitHub Actions.
+   scoped to account `366267eaff9b52ad4cc51008fa452a5c`. Include **Zone / Zone / Read**
+   and **Zone / Workers Routes / Edit** for `lajo-apps.info` to deploy the custom domain.
+   Local Wrangler OAuth login does not authenticate GitHub Actions.
 2. `RENDER_DEPLOY_HOOK_URL`: copy the deploy hook from the Render service's
    Settings page: https://dashboard.render.com/web/srv-db345a0m7kps73cvfsug.
    Treat the entire URL as a secret.
